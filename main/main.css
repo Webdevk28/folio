@@ -1,0 +1,13 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size:clamp(1rem, 3vw + 1rem, 8rem);
+}
+
+
+.red {
+    color: red;
+}

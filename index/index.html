@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- slide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="fixed top-0 py-3.5 z-50 bg-[#023047] text-[#4c4243] w-full shadow shadow-indigo-500/50">
+        <div class="max-w-7xl m-auto flex justify-between items-center">
+            <div class="bg hidden"></div>
+            <div class="logo">
+                <div class="font-bold text-2xl text-gray-200">
+                    <img src="../images/logo.png" class="w-28">
+                   <!-- <span class=" text-yellow-500">P</span>ortfolio -->
+                </div>
+            </div>
+            
+            <div class="flex gap-3 items-center justify-center">
+                <!-- menu -->
+                <div class="nav-menu">
+                    <div class="nav-item">
+                        <ul class="flex gap-3 justify-center items-center text-gray-100 md:gap-5 flex-col font-semibold md:flex-row">
+                            <li class="home active"><a href="#home">Home</a></li>
+                            <li class="about"><a href="#about">About</a></li>
+                            <li class="resume"><a href="#resume">Resume</a></li>
+                            <li class="skill"><a href="#skill">Skill</a></li>
+                            <li class="blog"><a href="#blog">Blog</a></li>
+                            <li class="quote"><a href="#quote">Quote</a></li>
+                            <li class="contact"><a href="#contact">Contact</a></li>
+                            <li class="hidden md:block"><a href="#">|</a></li>
+                        </ul>
+                    </div> 
+                </div>
+        
+                <div class="flex">
+                    <!-- light & dark mode -->
+                    <div class="">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <ion-icon name="moon" class="fa-moon"></ion-icon>
+                            <ion-icon name="sunny" class="fa-sun"></ion-icon>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+                    <!-- hamburger -->
+                    <button class="menu-icon">
+                        <div class="plate plate1" onclick="this.classList.toggle('active')">
+                        <svg class="burger" version="1.1" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 30,65 H 70" />
+                            <path class="line line2"
+                                d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695" />
+                            <path class="line line3"
+                                d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695" />
+                        </svg>
+                        <svg class="x" version="1.1" viewBox="0 0 100 100">
+                            <path class="line" d="M 34,32 L 66,68" />
+                            <path class="line" d="M 66,32 L 34,68" />
+                        </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main flex justify-center items-center">
+        <div class="main-items max-w-7xl mt-32">
+            <!-- Home -->
+            <section id="home" class="grid md:grid-cols-2 gap-5 relative">
+                
+                 <div class="flex justify-center items-center">
+                     <div class="flex flex-col">
+                         <span class="text-yellow-500 py-4 font-bold">HELLO</span>
+                         <span class="text-5xl font-extrabold">I'm <span class="text-yellow-500">Portfolio</span></span>
+                         <span class="text-2xl py-4">A Web Developer</span>
+                         <div class="mt-5">
+                            <button class="bg-yellow-500 rounded w-28 h-10 text-sm hover:text-gray-300 font-bold hover:bg-yellow-600 duration-300">HIRE ME</button>
+                            <button class="bg-gray-400 rounded w-28 h-10 text-sm hover:text-gray-300 font-bold hover:bg-gray-500 duration-300">MY WORK</button>
+                         </div>
+                         <div class="flex gap-5 text-3xl mt-5 *:duration-300">
+                            <a href="#" class="hover:text-gray-600 hover:scale-105"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#" class="hover:text-gray-600 hover:scale-105"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#" class="hover:text-gray-600 hover:scale-105"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class=" flex justify-center items-center mt-8 md:mt-0">
+                     <img src="../images/Boy-laptop.png" class="w-8/12">
+                 </div>
+            </section>
+
+            <!-- About -->
+            <section id="about" class="grid md:grid-cols-2 gap-10 mt-20 p-3">
+                <div class="">
+                    <img src="../images/Boy-laptop.png" class="w-8/12 m-auto hidden md:block">
+                </div>
+                <div class="">
+                    <span class="text-5xl font-bold">About Me</span>
+                    <p class="mt-8 ">React Router Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsum rerum eaque quaerat fuga ab excepturi, libero at corrupti illum iusto amet culpa nihil mollitia explicabo vitae sequi ducimus aut.</p>
+                    
+                    <div class="mt-8">
+                        <div class="flex">
+                            <span class="w-40 font-semibold">Name</span>
+                            <span class="font-light">Portfolio</span>
+                        </div>
+                        <!-- date of birth -->
+                        <div class="mt-5 flex">
+                            <span class="w-40 font-semibold">Date of birth:</span>
+                            <span class="font-light">January 01, 1987</span>
+                        </div>
+                        <!-- Address -->
+                        <div class="mt-5 flex">
+                            <span class="w-40 font-semibold">Address:</span>
+                            <span class="font-light">Olampic PhnomPenh Cambodia</span>
+                        </div>
+                        <!-- Email -->
+                        <div class="mt-5 flex">
+                            <span class="w-40 font-semibold">Email:</span>
+                            <span class="font-light">folio28@gmail.com</span>
+                        </div>
+                        <!-- Phone -->
+                        <div class="mt-5 flex">
+                            <span class="w-40 font-semibold">Phone/Telegram:</span>
+                            <span class="font-light">+855 71 288 727</span>
+                        </div>
+                    </div>
+    
+                    <div class="text-xl mt-10 font-semibold  ">
+                        <span class="text-yellow-500">120</span>
+                        <span class="ml-2">Project complete</span>
+                    </div>
+    
+                </div>
+            </section>
+
+            <!-- resume -->
+            <section id="resume" class="gallery mt-20 p-3">
+                <div class="flex justify-center items-center">
+                    <div class="gallery-filter flex gap-5 cursor-pointer font-bold">
+                        <span class="filter-item active" data-filter="all">All</span>
+                        <span class="filter-item" data-filter="shoe">Shoe</span>
+                        <span class="filter-item" data-filter="headphone">Headphone</span>
+                        <span class="filter-item" data-filter="camera">Camera</span>
+                    </div>
+                </div>
+        
+                <!-- <div class="grid grid-cols-3 gap-5 mt-10"> -->
+                <div class="flex justify-between flex-wrap mt-5">
+                    <!-- gallery item start -->
+                    <div class="gallery-item shoe">
+                        <div class="conner">
+                            <img src="https://i.postimg.cc/7PJ4yYHh/revolt-164-6w-VEHf-I-unsplash.jpg" alt="Avatar" class="image">
+                            <a href="#" class="overlay">
+                                <div class="flex justify-center items-center h-full">
+                                    <img src="../images/icon.png" class="w-16">
+                                </div>
+                            </a>
+                            <!-- text -->
+                            <div class="overlay2">
+                                <div class="text-center flex justify-center items-center h-full">
+                                    <span class="font-bold">Shoe</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- gallery item start -->
+                    <div class="gallery-item headphone">
+                        <div class="conner">
+                            <img src="https://i.postimg.cc/zf7MT4q9/istockphoto-1289318271-170667a.jpg" alt="Avatar" class="image">
+                            <a href="#" class="overlay">
+                                <div class="flex justify-center items-center h-full">
+                                    <img src="../images/icon.png" class="w-16">
+                                </div>
+                            </a>
+                            <!-- text -->
+                            <div class="overlay2">
+                                <div class="text-center flex justify-center items-center h-full">
+                                    <span class="font-bold">Headphone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item start -->
+                    <div class="gallery-item camera">
+                        <div class="conner">
+                            <img src="https://i.postimg.cc/vZ7QQdMP/nordwood-themes-F3-Dde-9thd8-unsplash.jpg" alt="Avatar" class="image">
+                            <a href="#" class="overlay">
+                                <div class="flex justify-center items-center h-full">
+                                    <img src="../images/icon.png" class="w-16">
+                                </div>
+                            </a>
+                            <!-- text -->
+                            <div class="overlay2">
+                                <div class="text-center flex justify-center items-center h-full">
+                                    <span class="font-bold">Camera</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item start -->
+                    <div class="gallery-item headphone">
+                        <div class="conner">
+                            <img src="https://i.postimg.cc/3xTY15HR/c-d-x-PDX-a-82obo-unsplash.jpg" alt="Avatar" class="image">
+                            <a href="#" class="overlay">
+                                <div class="flex justify-center items-center h-full">
+                                    <img src="../images/icon.png" class="w-16">
+                                </div>
+                            </a>
+                            <!-- text -->
+                            <div class="overlay2">
+                                <div class="text-center flex justify-center items-center h-full">
+                                    <span class="font-bold">Headphone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item start -->
+                    <div class="gallery-item camera">
+                        <div class="conner">
+                            <img src="https://i.postimg.cc/PrYL89TD/patrick-dozk-Vh-Dyvh-Q-unsplash.jpg" alt="Avatar" class="image">
+                            <a href="#" class="overlay">
+                                <div class="flex justify-center items-center h-full">
+                                    <img src="../images/icon.png" class="w-16">
+                                </div>
+                            </a>
+                            <!-- text -->
+                            <div class="overlay2">
+                                <div class="text-center flex justify-center items-center h-full">
+                                    <span class="font-bold">Camera</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gallery item start -->
+                    <div class="gallery-item headphone">
+                        <div class="conner">
+                            <img src="https://i.postimg.cc/PqYyN2Nr/ervo-rocks-Zam8-Tv-Eg-N5o-unsplash.jpg" alt="Avatar" class="image">
+                            <a href="#" class="overlay">
+                                <div class="flex justify-center items-center h-full">
+                                    <img src="../images/icon.png" class="w-16">
+                                </div>
+                            </a>
+                            <!-- text -->
+                            <div class="overlay2">
+                                <div class="text-center flex justify-center items-center h-full">
+                                    <span class="font-bold">Headphone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery item end -->
+                </div>
+            </section>
+
+            <!--Education & skill -->
+            <section id="skill" class="w-full flex flex-col gap-5 justify-center items-center py-20 px-3">
+                <span class="text-3xl font-bold text-yellow-600">Education & Skill</span>
+                <div class="flex-content max-w-7xl shadow shadow-gray-500/50 p-5 py-8 md:p-10 md:py-10 rounded-lg">
+                    <!-- Education -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- 1 -->
+                        <div class="flex flex-col">
+                            <div class="">
+                                <button class="border-2 border-yellow-500 px-5 py-1.5">2024 - 2024</button>
+                            </div>
+                            <span class="text-xl font-bold mt-3 block">WordPress and End Developer</span>
+                            <p class="mt-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem</p>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="flex flex-col">
+                            <div class="">
+                                <button class="border-2 border-yellow-500 px-5 py-1.5">2024 - 2024</button>
+                            </div>
+                            <span class="text-xl font-bold mt-3 block">WordPress and End Developer</span>
+                            <p class="mt-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem</p>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="flex flex-col">
+                            <div class="">
+                                <button class="border-2 border-yellow-500 px-5 py-1.5">2024 - 2024</button>
+                            </div>
+                            <span class="text-xl font-bold mt-3 block">WordPress and End Developer</span>
+                            <p class="mt-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem</p>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="flex flex-col">
+                            <div class="">
+                                <button class="border-2 border-yellow-500 px-5 py-1.5">2024 - 2024</button>
+                            </div>
+                            <span class="text-xl font-bold mt-3 block">WordPress and End Developer</span>
+                            <p class="mt-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem</p>
+                        </div>
+                    </div>
+
+                    <!-- Skill -->
+                    <div class="flex1 grid md:grid-cols-2 gap-8 mt-10 w-full">
+                        <!-- HTML -->
+                        <div class=" bg-[#4c4243]">
+                            <span class="block font-bold ml-3 mt-3 text-lg text-gray-200">HTML</span>
+                            <div class="pro-skill pro-value flex justify-end items-center mt-5">88%</div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div class=" bg-[#4c4243]">
+                            <span class="block font-bold ml-3 mt-3 text-lg text-gray-200">CSS</span>
+                            <div class="pro-skill pro-value2 flex justify-end items-center mt-5">88%</div>
+                        </div>
+
+                        <!-- Tailwind -->
+                        <div class=" bg-[#4c4243]">
+                            <span class="block font-bold ml-3 mt-3 text-lg text-gray-200">TailwindCSS</span>
+                            <div class="pro-skill pro-value3 flex justify-end items-center mt-5">75%</div>
+                        </div>
+
+                        <!-- Javascript -->
+                        <div class=" bg-[#4c4243]">
+                            <span class="block font-bold ml-3 mt-3 text-lg text-gray-200">Javascript</span>
+                            <div class="pro-skill pro-value4 flex justify-end items-center mt-5">50%</div>
+                        </div>
+
+                        <!-- React Js -->
+                        <div class=" bg-[#4c4243]">
+                            <span class="block font-bold ml-3 mt-3 text-lg text-gray-200">React Js</span>
+                            <div class="pro-skill pro-value5 flex justify-end items-center mt-5">50%</div>
+                        </div>
+
+                        <!-- Boostrap -->
+                        <div class=" bg-[#4c4243]">
+                            <span class="block font-bold ml-3 mt-3 text-lg text-gray-200">Boostrap</span>
+                            <div class="pro-skill pro-value6 flex justify-end items-center mt-5">75%</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- blog -->
+            <section id="blog" class="">
+                <div class="flex flex-col justify-center items-center">
+                    <span class="text-3xl font-bold">My Blog</span>
+                    <div class="slider-item w-[350px] sm:w-[500px] mt-5">
+                        <div class="relative">
+                            <img src="../images/bgframe28.png" class="">
+                            <div class="p-3 absolute top-0 text-xl font-semibold flex justify-center items-center h-full w-full">
+                                <span class="blog-text">Lorem ipsum dolor</span>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img src="../images/bgframe28.png" class="">
+                            <div class="p-3 absolute top-0 text-xl font-semibold flex justify-center items-center h-full w-full">
+                                <span class="blog-text">Lorem ipsum dolor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quote -->
+            <section id="quote" class="py-10 px-3">
+                <div class="text-3xl flex font-bold border-b-2 py-2 border-gray-300 w-full">
+                    <span class="text-yellow-500">Q</span>
+                    <span class="">uote</span>
+                </div>
+                <div class="quote flex flex-col justify-center items-center py-10">
+                    <div class="w-full sm:w-10/12 md:w-8/12 mt-10">
+                        <span class="text-center block"> " If you are not the solution in that problem don't make your self a path in that problem " </span>
+                        <span class="text-center block"> " If you are the solution in that problem let to do it " </span>
+                        <div class="flex flex-col justify-center items-center mt-5">
+                            <img src="../images/Boy-laptop.png" class="w-28 h-28 overflow-hidden rounded-full">
+                            <span class="">Folio Port</span>
+                            <span class="text-gray-800 text-xs -mt-1">Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- footer -->
+            <footer class="py-3 bg-[#4c4243] text-gray-100">
+                <div class="grid md:grid-cols-3 gap-8 p-5">
+                    <div class="flex gap-3">
+                        <div class="text-5xl"><ion-icon class="p-3 rounded-full bg-yellow-500" name="location-outline"></ion-icon></div>
+                        <div class="flex flex-col item-center justify-center">
+                            <span class="text-xl font-bold">Address</span>
+                            <span class="text-gray-300">2118 Thornridge Cir. Syracuse,</span>
+                            <span class="text-gray-300">Connecticut 35624</span>
+                        </div>
+                    </div>
+        
+                    <div class="flex gap-3">
+                        <div class="text-5xl"><ion-icon class="p-3 rounded-full bg-yellow-500" name="call-outline"></ion-icon></div>
+                        <div class="flex flex-col item-center justify-center">
+                            <span class="text-xl font-bold">Lets talk us</span>
+                            <span class="text-gray-300">(+855) 272829</span>
+                            <span class="text-gray-300">(+855) 272829</span>
+                        </div>
+                    </div>
+        
+                    <div class="flex gap-3">
+                        <div class="text-5xl"><ion-icon class="p-3 rounded-full bg-yellow-500" name="mail-outline"></ion-icon></div>
+                        <div class="flex flex-col item-center justify-center">
+                            <span class="text-gray-300 text-xl font-bold">Send us email</span>
+                            <span class="text-gray-300">folio28@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
